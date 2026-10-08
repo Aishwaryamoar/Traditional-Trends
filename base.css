@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root {
+  --z-overlay: 400; --z-spotlight: 1000; --z-critical: 2000;
+  --spacing-1: .25rem; --spacing-2: .5rem; --spacing-3: .75rem; --spacing-4: 1rem;
+  --spacing-6: 1.5rem; --spacing-8: 2rem; --spacing-12: 3rem; --spacing-16: 4rem; --spacing-20: 5rem;
+}
+:root {
+  --background:#fff8ef; --foreground:#241616; --surface:#f3e6d5; --surface-foreground:#241616;
+  --sidebar:#f5ead9; --sidebar-foreground:#3b1717; --card:#fffdf9; --card-foreground:#241616;
+  --popup:#fffdf9; --popup-foreground:#241616; --primary:#ff5a36; --primary-foreground:#fffdf9;
+  --secondary:#ead8c1; --secondary-foreground:#241616; --accent:#12a6a6; --accent-foreground:#fffdf9;
+  --muted:#eee3d7; --muted-foreground:#70655d; --success:#3f7d5b; --success-foreground:#fff;
+  --error:#b42318; --error-foreground:#fff; --warning:#a15c00; --warning-foreground:#fff;
+  --info:#277c78; --info-foreground:#fff; --info-hover:#206864; --info-active:#185652; --border:#d7c8b4;
+  --font-family-base:'Manrope',system-ui,sans-serif; --font-family-display:'DM Serif Display',Georgia,serif;
+  --font-family-monospace:ui-monospace,SFMono-Regular,monospace; --font-family-cursive:cursive;
+  --shadow:0 8px 24px rgba(42,25,16,.07); --shadow-md:0 14px 34px rgba(42,25,16,.11);
+  --shadow-lg:0 24px 60px rgba(53,38,20,.14); --shadow-focus:0 0 0 4px rgba(232,93,4,.18);
+  --radius-sm:.6rem; --radius:.9rem; --radius-md:1.15rem; --radius-lg:1.8rem; --radius-full:9999px;
+  --animation-duration-fast:150ms; --animation-duration-normal:250ms; --animation-duration-slow:450ms;
+  --chart-color-1:#e85d04; --chart-color-2:#6f675e; --chart-color-3:#3f7d5b; --chart-color-4:#4169a1; --chart-color-5:#a15c00;
+}
+.dark {
+  --background:#181512; --foreground:#f8f1e6; --surface:#24201c; --surface-foreground:#f8f1e6;
+  --sidebar:#211d19; --sidebar-foreground:#f8f1e6; --card:#28231e; --card-foreground:#f8f1e6;
+  --popup:#28231e; --popup-foreground:#f8f1e6; --primary:#ff7a22; --primary-foreground:#20150c;
+  --secondary:#3a322a; --secondary-foreground:#f8f1e6; --accent:#704021; --accent-foreground:#fff1e2;
+  --muted:#332d27; --muted-foreground:#b9ad9f; --border:#4a4035;
+}
