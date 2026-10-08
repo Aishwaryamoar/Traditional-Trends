@@ -1,0 +1,6 @@
+import { Link } from "react-router-dom";
+import { ArrowLeft, Mail, Instagram, MessageCircle } from "lucide-react";
+import { Button } from "../components/Button";
+import { Input } from "../components/Input";
+import styles from "./contact-us.module.css";
+export default function ContactUs(){return <div className={styles.page}><header><Link to="/" className={styles.logo}>traditional<span>trends</span></Link><Link to="/" className={styles.back}><ArrowLeft size={17}/> Back to shop</Link></header><main><div><p className={styles.eyebrow}>SAY HELLO</p><h1>Let’s talk<br/><em>style.</em></h1><p>Questions about an order, sizing, styling or just want to say hi? We’re here.</p><div className={styles.links}><span><Mail/> hello@traditionaltrends.in</span><span><Instagram/> @traditionaltrends</span><span><MessageCircle/> WhatsApp us</span></div></div><form><label>Name<Input placeholder="Your name"/></label><label>Email<Input type="email" placeholder="you@example.com"/></label><label>Message<textarea placeholder="Tell us what’s on your mind..." /></label><Button size="lg">Send message</Button></form></main></div>}
