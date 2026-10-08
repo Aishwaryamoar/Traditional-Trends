@@ -1,0 +1,5 @@
+import superjson from "superjson";
+import { db } from "../../../helpers/db";
+import { getServerUserSession } from "../../../helpers/getServerUserSession";
+import { z } from "zod";
+export async function handle(request:Request){try{const {user}=await getServerUserSession(request);if(user.role!=="admin")return new Response(superjson.stringify({error:"Admin access required."}),{status:403,headers:{"Content-Type":"application/json"}});const body=z.object({id:z.number().int().positive()}).parse(superjson.parse(await request.text()));const deleted=await db.deleteFrom("products").where("id","=",body.id).returning("id").executeTakeFirst();if(!deleted)return new Response(superjson.stringify({error:"Product not found."}),{status:404,headers:{"Content-Type":"application/json"}});return new Response(superjson.stringify({success:true}),{headers:{"Content-Type":"application/json"}})}catch(error){const message=error instanceof Error?error.message:"Could not delete product.";return new Response(superjson.stringify({error:message}),{status:400,headers:{"Content-Type":"application/json"}})}}
