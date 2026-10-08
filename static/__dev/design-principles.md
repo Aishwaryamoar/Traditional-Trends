@@ -1,0 +1,2 @@
+Traditional Trends is a modern Indian fashion storefront with a “heritage-pop” thread: traditional craft cues reinterpreted through playful Gen-Z editorial energy. Use warm ivory and deep ink as the calm base, with one saturated saffron-orange accent for sale, CTAs, and highlights. Pair a characterful display serif with a clean sans UI face. Keep the pacing generous, imagery-forward, tactile, rounded, and lightly elevated with soft shadows. Light-first, with a dark mode-ready token system.
+
